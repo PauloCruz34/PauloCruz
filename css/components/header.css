@@ -13,7 +13,7 @@ header .header__left{
 
 header .header__left p {
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     max-width:  50rem;
 }
 
@@ -40,7 +40,18 @@ header .header__right .header__image .paulo{
 
 header .header__right .header__image .background{
     position: absolute;
-    top: -4rem;
+    top: -2rem;
     right: -2.5rem;
     z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    header .header__left p {
+        margin: 2rem auto 4rem;
+    }
 }
